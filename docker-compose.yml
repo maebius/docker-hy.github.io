@@ -6,7 +6,7 @@ services:
     ports:
       - 4000:80
     container_name: coursematerial
-  watchtower: # this to listen changes in containers
+  watchtower: # this to listen changes in containers #2
     image: containrrr/watchtower
     environment:
       -  WATCHTOWER_POLL_INTERVAL=60 # Poll every 60 seconds
